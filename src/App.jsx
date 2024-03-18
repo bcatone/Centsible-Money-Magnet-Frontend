@@ -1,28 +1,16 @@
-import { useState } from "react";
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import React from 'react';
+import { UserContextProvider } from './UserContext';
+import ComponentA from './ComponentA';
+import ComponentB from './ComponentB';
 
 function App() {
-  
-
   return (
-    <>
-      <Routes>
-        <Route path="/">
-          <Route path="login/" />
-          <Route path="create-account/" />
-          <Route path="verified-user/" />
-          <Route path="accounts/" />
-          <Route path="transactions/" />
-          <Route path="budget/" />
-          <Route path="expenses/" />
-          <Route path="goals/" />
-          <Route path="investments/" />
-          <Route path="advice/" />
-        </Route>
-        <Route path={"*"} />
-      </Routes>
-    </>
+    <UserContextProvider>
+      <div className="App">
+        <ComponentA />
+        <ComponentB />
+      </div>
+    </UserContextProvider>
   );
 }
 

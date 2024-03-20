@@ -22,7 +22,10 @@ const UserContextProvider = ({ children }) => {
     // other values or functions related to user context
   };
 
-  return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
+  return(
+    <UserContext.Provider value={value}>
+      {children}
+    </UserContext.Provider>)
 };
 
 export default UserContextProvider;

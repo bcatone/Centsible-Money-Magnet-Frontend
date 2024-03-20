@@ -1,16 +1,16 @@
-import React from 'react';
-import { UserContextProvider } from './UserContext';
-import ComponentA from './ComponentA';
-import ComponentB from './ComponentB';
+import React, {useContext} from 'react';
+import Landing from './pages/Landing';
+import UserContextProvider from './contexts/UserContext';
+import ConnectPlaid from './components/ConnectPlaid'
 
 function App() {
   return (
-    <UserContextProvider>
-      <div className="App">
-        <ComponentA />
-        <ComponentB />
-      </div>
-    </UserContextProvider>
+      <UserContextProvider>
+        <div>
+          <h1>Money Magnet</h1>
+          <ConnectPlaid />
+        </div>
+      </UserContextProvider>
   );
 }
 

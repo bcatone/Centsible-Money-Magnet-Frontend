@@ -1,0 +1,11 @@
+.page-header {
+  background-color: #ffffff;
+  padding: 28px 0px 16px 0px;
+  min-height: 30px;
+  width: 100vw !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: padding-left 0.3s ease;
+  z-index: 999;
+}

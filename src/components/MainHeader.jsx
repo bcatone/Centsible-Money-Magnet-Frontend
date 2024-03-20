@@ -10,7 +10,7 @@ function Header() {
   }
 
   const handleSignup = () => {
-    navigate('/getstarted')
+    navigate('/get-started')
   }
 
   return (

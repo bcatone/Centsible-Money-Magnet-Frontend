@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
+import './styles/global.css'
+import './styles/fonts.css'
+import './styles/sidebar.css'
 import UserProvider from './contexts/UserContext'
 import Sidebar from './components/Sidebar'
 import PageHeader from './components/PageHeader'
@@ -16,10 +19,6 @@ import Plan from './pages/Plan'
 import Goals from './pages/Goals'
 import Investments from './pages/Investments'
 import Advice from './pages/Advice'
-import './App.css'
-import './styles/global.css'
-import './styles/fonts.css'
-import './styles/sidebar.css'
 
 function App() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(true)
@@ -39,14 +38,14 @@ function App() {
 
   // Function to set page margin based on the current width of the sidebar
   const getContentMargin = () => {
-    return isSidebarExpanded ? '320px' : '160px'
+    return isSidebarExpanded ? '300px' : '140px'
   }
 
   const handleLogoClick = () => {
     navigate('/')
   }
   // Conditionally render the sidebar based on the current page
-  const renderSidebar = !['/login', '/', '/getstarted'].includes(location.pathname)
+  const renderSidebar = !['/login', '/', '/get-started'].includes(location.pathname)
   const renderPageHeader = [
     '/dashboard',
     '/accounts',
@@ -60,41 +59,46 @@ function App() {
   ].includes(location.pathname)
 
   return (
-    <UserProvider>
-      {renderSidebar && (
-        <Sidebar
-          isExpanded={isSidebarExpanded}
-          toggleSidebarWidth={toggleSidebarWidth}
-          handlePageTitle={handlePageTitle}
-        />
-      )}
-      <div
-        className='content-container'
-        style={{
-          marginLeft: renderSidebar ? getContentMargin() : '0',
-          transition: 'margin-left 0.3s ease',
-        }}
-      >
-        {renderPageHeader && (
-          <PageHeader sidebarWidth={isSidebarExpanded ? 300 : 140} pageTitle={pageTitle} />
+    <div>
+      <UserProvider>
+        {renderSidebar && (
+          <Sidebar
+            isExpanded={isSidebarExpanded}
+            toggleSidebarWidth={toggleSidebarWidth}
+            handlePageTitle={handlePageTitle}
+          />
         )}
-        <Routes>
-          <Route exact path='/' element={<LandingPage />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/getstarted' element={<CreateAccount handleLogoClick={handleLogoClick} />} />
-          <Route path='/profile' element={<UserProfile />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/accounts' element={<Accounts />} />
-          <Route path='/transactions' element={<Transactions />} />
-          <Route path='/expenses' element={<Expenses />} />
-          <Route path='/plan' element={<Plan />} />
-          <Route path='/goals' element={<Goals />} />
-          <Route path='/investments' element={<Investments />} />
-          <Route path='/advice' element={<Advice />} />
-          <Route path='/logout' element={<LogOut />} />
-        </Routes>
-      </div>
-    </UserProvider>
+        <div
+          className='content-container'
+          style={{
+            marginLeft: renderSidebar ? getContentMargin() : '0',
+            transition: 'margin-left 0.3s ease',
+          }}
+        >
+          {renderPageHeader && (
+            <PageHeader sidebarWidth={isSidebarExpanded ? 300 : 140} pageTitle={pageTitle} />
+          )}
+          <Routes>
+            <Route exact path='/' element={<LandingPage />} />
+            <Route path='/login' element={<Login handleLogoClick={handleLogoClick} />} />
+            <Route
+              path='/get-started'
+              element={<CreateAccount handleLogoClick={handleLogoClick} />}
+            />
+            <Route path='/profile' element={<UserProfile />} />
+            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/accounts' element={<Accounts />} />
+            <Route path='/transactions' element={<Transactions />} />
+            <Route path='/expenses' element={<Expenses />} />
+            <Route path='/plan' element={<Plan />} />
+            <Route path='/goals' element={<Goals />} />
+            <Route path='/investments' element={<Investments />} />
+            <Route path='/advice' element={<Advice />} />
+            <Route path='/logout' element={<LogOut />} />
+          </Routes>
+        </div>
+      </UserProvider>
+    </div>
   )
 }
 

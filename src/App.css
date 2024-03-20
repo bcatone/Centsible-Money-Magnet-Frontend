@@ -1,7 +1,0 @@
-
-button:focus,
-a:focus {
-  outline: none;
-  border: 2px solid #009933; /* Custom border color for focus */
-  /* Add other styles as needed */
-}

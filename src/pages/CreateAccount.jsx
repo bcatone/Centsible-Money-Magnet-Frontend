@@ -26,16 +26,18 @@ function CreateAccount({ handleLogoClick }) {
         </p>
         <h3 className='create-accout-heading'>Get Started Today</h3>
         <CreateAccountForm />
+        <div>
+          <p className='privacy-stmnt'>
+            By clicking the button above, you agree to our Terms of Use and Privacy Policy
+          </p>
+        </div>
+        <p className='signin-link'>
+          Already have an account?{' '}
+          <span style={{ color: '#009933' }} onClick={handleSignInLink}>
+            Sign In
+          </span>
+        </p>
       </div>
-      <div className='privacy-stmnt'>
-        <p>By clicking the button above, you agree to our Terms of Use and Privacy Policy</p>
-      </div>
-      <p className='signin-link'>
-        Already have an account?{' '}
-        <span style={{ color: '#009933' }} onClick={handleSignInLink}>
-          Sign In
-        </span>
-      </p>
     </div>
   )
 }

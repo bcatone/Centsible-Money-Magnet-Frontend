@@ -1,6 +1,5 @@
 .login-page {
   width: 100vw !important;
-  margin-top: -100px;
 }
 
 .form-background {
@@ -69,8 +68,8 @@ input {
   background-color: rgb(234, 228, 239, 0.5);
   caret-color: #009933;
   width: auto;
-  height: 28px;
-  padding: 12px;
+  height: 26px;
+  padding: 4px;
   padding-left: 5px;
   padding-right: 5px;
   min-width: 300px;
@@ -93,6 +92,8 @@ input:focus {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 10px;
+    overflow-y: auto;
+
 }
 
 .form-label {
@@ -106,7 +107,7 @@ label {
 
 .form-btns {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -117,21 +118,43 @@ label {
 .submit-btn {
   background-color: #009933;
   color: white;
-  border: none;
-  padding: 10px 42px;
-  margin-top: 10px;
+  border: solid 1px #009933;
+  border-radius: 5px;
+  padding: 5px 30px;
+  margin: 5px;
   cursor: pointer;
+  font-size: 13px;
+  min-width: 180px;
 }
 
 .submit-btn:hover {
   background-color: #00661f;
+  border: solid 1px #00661f;
+}
+
+.google-btn {
+  background-color: rgba(234, 228, 239, 0.5);
+  color: #009933;
+  border: solid 1px #009933;
+  border-radius: 5px;
+  padding: 5px 30px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 13px;
+    min-width: 180px;
+
+}
+
+.google-btn:hover {
+  background-color: #00661f;
+  color: white;
   border: none;
-  margin-top: 10px;
 }
 
 .form-link {
   font-size: 11px;
   font-style: italic;
+  text-align: center;
   margin: 14px;
   cursor: pointer;
 }

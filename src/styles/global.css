@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  position: relative;
+  color: #212934;
+  background-color: #eae4ef;
+  max-width: 1920px;
+}
+
+button {
+  background-color: #009933;
+  border: none;
+  padding: 7px 36px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #00661f;
+  border: none;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+  border: none;
+}

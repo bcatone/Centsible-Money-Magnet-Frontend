@@ -1,0 +1,80 @@
+.create-account-page {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1710869491/Money%20Magnet/brooke-cagle-g1Kr4Ozfoac-unsplash_enpsx6.jpg');
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.create-account-form {
+  align-content: center;
+}
+
+.create-account-content {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+}
+
+.money-magnet-icon {
+  width: 120px;
+  height: 120px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.create-accout-heading {
+  margin: 40px auto 20px auto;
+}
+
+.create-accout-subheading {
+  font-size: 15px;
+  width: 300px;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.create-account-btn {
+  background-color: #009933;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 36px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.create-account-btn:hover {
+  background-color: #00661f;
+
+}
+
+.signin-link {
+  position: absolute;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 60px;
+  width: 500px;
+  cursor: pointer;
+}
+
+.privacy-stmnt {
+  font-size: 11px;
+  text-align: center;
+  margin: 30px;
+  cursor: pointer;
+  width: 300px;
+}

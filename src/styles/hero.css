@@ -1,0 +1,94 @@
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1710815109/Money%20Magnet/christin-hume-mfB1B1s4sMc-unsplash_vgg8pl.jpg');
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+  max-width: none;
+  height: 440px;
+  overflow: hidden;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 4px;
+  z-index: 1000 !important;
+}
+
+/* .icon-background {
+  background-color: #ffffff;
+  height: 110px;
+  width: 110px;
+  margin-left: 60px;
+  padding: 28px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.money-magnet-icon {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  margin-top: -100px;
+  margin-bottom: 30px;
+}
+
+/* .hero-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  opacity: 100% !important;
+  z-index: 9999;
+} */
+
+.hero-heading {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  margin-bottom: 2px;
+}
+
+.hero-subheading {
+  color: white;
+  font-size: 24px;
+  margin-left: 22px;
+  letter-spacing: 1px;
+  text-align: left !important;
+}
+
+.sign-up-button {
+  background-color: #009933;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 36px;
+  margin-top: 26px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sign-up-button:hover {
+  background-color: #00661f;
+  border: none;
+}

@@ -1,11 +1,13 @@
 .testimonials-section {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   background-color: #009933;
   justify-content: space-around;
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
+  text-align: center !important;
 }
 
 .testimonials-header {

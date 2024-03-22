@@ -1,8 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../styles/features.css'
 
 //! Add screenshots from figma
-const WhyChooseUs = () => {
+const KeyFeatures = () => {
+  const navigate = useNavigate()
+
+  const handleGetStarted = () => {
+    navigate('/get-started')
+  }
+
   return (
     <div className='key-features'>
       <h3 className='section-heading'>Why Choose Money Magnet?</h3>
@@ -49,10 +56,12 @@ const WhyChooseUs = () => {
         <p className='cta-header'>
           Elevate your financial game with Money Magnet. Start managing your money like a pro today!
         </p>
-        <button className='sign-up-button'>Get Started Today</button>
+        <button className='sign-up-button' onClick={handleGetStarted}>
+          Get Started Today
+        </button>
       </div>
     </div>
   )
 }
 
-export default WhyChooseUs
+export default KeyFeatures

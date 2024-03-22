@@ -44,120 +44,102 @@ const Sidebar = ({ isExpanded, toggleSidebarWidth, handlePageTitle }) => {
       </div>
       <div className='sidebar-links'>
         <div className='sidebar-link'>
-          <img
-            src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303919/Money%20Magnet/dashboard_jfq9no.svg'
-            alt='Dashboard'
-            className='sidebar-icon'
-          />
-          {isExpanded && (
-            <Link to='/dashboard' onClick={() => handleLinkClick('Dashboard')}>
-              Dashboard
-            </Link>
-          )}
+          <Link to='/dashboard' onClick={() => handleLinkClick('Dashboard')}>
+            <img
+              src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303919/Money%20Magnet/dashboard_jfq9no.svg'
+              alt='Dashboard'
+              className='sidebar-icon'
+            />
+            {isExpanded && 'Dashboard'}
+          </Link>
         </div>
         <div className='sidebar-link'>
-          <img
-            src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303917/Money%20Magnet/accounts_qq2hlh.svg'
-            alt='Accounts'
-            className='sidebar-icon'
-          />
-          {isExpanded && (
-            <Link to='/accounts' onClick={() => handleLinkClick('Accounts')}>
-              Accounts
-            </Link>
-          )}
+          <Link to='/accounts' onClick={() => handleLinkClick('Accounts')}>
+            <img
+              src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303917/Money%20Magnet/accounts_qq2hlh.svg'
+              alt='Accounts'
+              className='sidebar-icon'
+            />
+            {isExpanded && 'Accounts'}
+          </Link>
         </div>
         <div className='sidebar-link'>
-          <img
-            src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303923/Money%20Magnet/transactions_exqoem.svg'
-            alt='Transactions'
-            className='sidebar-icon'
-          />
-          {isExpanded && (
-            <Link to='/transactions' onClick={() => handleLinkClick('Transactions')}>
-              Transactions
-            </Link>
-          )}
+          <Link to='/transactions' onClick={() => handleLinkClick('Transactions')}>
+            <img
+              src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303923/Money%20Magnet/transactions_exqoem.svg'
+              alt='Transactions'
+              className='sidebar-icon'
+            />
+            {isExpanded && 'Transactions'}
+          </Link>
         </div>
         <div className='sidebar-link'>
-          <img
-            src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303920/Money%20Magnet/expenses_fyzrub.svg'
-            alt='Expenses'
-            className='sidebar-icon'
-          />
-          {isExpanded && (
-            <Link to='/expenses' onClick={() => handleLinkClick('Expenses')}>
-              Expenses
-            </Link>
-          )}
+          <Link to='/expenses' onClick={() => handleLinkClick('Expenses')}>
+            <img
+              src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303920/Money%20Magnet/expenses_fyzrub.svg'
+              alt='Expenses'
+              className='sidebar-icon'
+            />
+            {isExpanded && 'Expenses'}
+          </Link>
         </div>
         <div className='sidebar-link'>
-          <img
-            src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303922/Money%20Magnet/plan_yawabu.svg'
-            alt='Plan'
-            className='sidebar-icon'
-          />
-          {isExpanded && (
-            <Link to='/plan' onClick={() => handleLinkClick('Plan')}>
-              Plan
-            </Link>
-          )}
+          <Link to='/plan' onClick={() => handleLinkClick('Plan')}>
+            <img
+              src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303922/Money%20Magnet/plan_yawabu.svg'
+              alt='Plan'
+              className='sidebar-icon'
+            />
+            {isExpanded && 'Plan'}
+          </Link>
         </div>
         <div className='sidebar-link'>
-          <img
-            src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303921/Money%20Magnet/goals_mizy6b.svg'
-            alt='Goals'
-            className='sidebar-icon'
-          />
-          {isExpanded && (
-            <Link to='/goals' onClick={() => handleLinkClick('Goals')}>
-              Goals
-            </Link>
-          )}
+          <Link to='/goals' onClick={() => handleLinkClick('Goals')}>
+            <img
+              src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303921/Money%20Magnet/goals_mizy6b.svg'
+              alt='Goals'
+              className='sidebar-icon'
+            />
+            {isExpanded && 'Goals'}
+          </Link>
         </div>
         <div className='sidebar-link'>
-          <img
-            src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303921/Money%20Magnet/investments_mmt6do.svg'
-            alt='Investments'
-            className='sidebar-icon'
-          />
-          {isExpanded && (
-            <Link to='/investments' onClick={() => handleLinkClick('Investments')}>
-              Investments
-            </Link>
-          )}
+          <Link to='/investments' onClick={() => handleLinkClick('Investments')}>
+            <img
+              src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303921/Money%20Magnet/investments_mmt6do.svg'
+              alt='Investments'
+              className='sidebar-icon'
+            />
+            {isExpanded && 'Investments'}
+          </Link>
         </div>
         <div className='sidebar-link'>
-          <img
-            src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303918/Money%20Magnet/advice_eriooh.svg'
-            alt='Advice'
-            className='sidebar-icon'
-          />
-          {isExpanded && (
-            <Link to='/advice' onClick={() => handleLinkClick('Advice')}>
-              Advice
-            </Link>
-          )}
+          <Link to='/advice' onClick={() => handleLinkClick('Advice')}>
+            <img
+              src='https://res.cloudinary.com/dovuffpii/image/upload/v1710303918/Money%20Magnet/advice_eriooh.svg'
+              alt='Advice'
+              className='sidebar-icon'
+            />
+            {isExpanded && 'Advice'}
+          </Link>
         </div>
       </div>
       <div className='user-profile'>
         {/* {user && ( */}
         <div className='sidebar-link profile-link'>
-          <img
-            src='https://res.cloudinary.com/dovuffpii/image/upload/v1710310110/Money%20Magnet/profile-img-placeholder_ljqrad.svg'
-            alt='Profile'
-            className='sidebar-icon profile-icon'
-          />
-          {isExpanded && (
-            // <Link to='/profile' className='profile-text'>{user.name}</Link>
-            <Link
-              to='/profile'
-              className='profile-text'
-              onClick={() => handlePageTitle('Your Profile')}
-            >
-              User Name
-            </Link>
-          )}
+          <Link
+            to='/profile'
+            className='profile-text'
+            onClick={() => handlePageTitle('Your Profile')}
+          >
+            <img
+              src='https://res.cloudinary.com/dovuffpii/image/upload/v1710310110/Money%20Magnet/profile-img-placeholder_ljqrad.svg'
+              alt='Profile'
+              className='sidebar-icon profile-icon'
+            />
+            {/* <Link to='/profile' className='profile-text'>{user.name}</Link> */}
+            {isExpanded && 'User Name'}
+          </Link>
         </div>
       </div>
     </div>

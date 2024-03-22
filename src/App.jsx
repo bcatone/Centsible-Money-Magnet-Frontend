@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import './styles/global.css'
 import './styles/fonts.css'
@@ -26,6 +26,8 @@ function App() {
   const location = useLocation()
   const navigate = useNavigate()
 
+
+
   //Function to toggle sidebar width
   const toggleSidebarWidth = () => {
     setIsSidebarExpanded(!isSidebarExpanded)
@@ -44,6 +46,7 @@ function App() {
   const handleLogoClick = () => {
     navigate('/')
   }
+
   // Conditionally render the sidebar based on the current page
   const renderSidebar = !['/login', '/', '/get-started'].includes(location.pathname)
   const renderPageHeader = [

@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { GoogleOAuthProvider } from '@react-oauth/google'
-import Auth from '../auth/auth'
 import { useNavigate } from 'react-router-dom'
 import '../styles/login.css'
 
@@ -99,11 +97,6 @@ function LoginForm({ handleLogoClick }) {
           <button className='submit-btn' type='submit'>
             Log in with Email
           </button>
-          <div>
-            <GoogleOAuthProvider clientId='28743971821-dctltgln93jsuslkf8qpdi8ad612ss72.apps.googleusercontent.com'>
-              <Auth></Auth>
-            </GoogleOAuthProvider>
-          </div>
         </div>
           <p className='form-link' onClick={handleSignup}>
             New here? Click here to create a free account today!

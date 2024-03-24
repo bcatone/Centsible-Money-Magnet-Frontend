@@ -1,8 +1,11 @@
 import React from 'react'
+import PlaidLinkButton from '../components/PlaidLinkButton'
 
 function Accounts() {
   return (
-    <div>Accounts</div>
+    <div>Accounts
+      <PlaidLinkButton />
+    </div>
   )
 }
 
